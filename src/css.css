@@ -1,0 +1,58 @@
+.global {
+  margin-top: 42px;
+  margin-left: 110px;
+  width: 610.67px;
+}
+.quantityButton > Button {
+  margin: 2px;
+  border-radius: 5px;
+  height: 45.74px;
+}
+.bBtn-loadBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.loadButton {
+  margin-left: 10px;
+}
+
+.temas-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.infoBtn-p {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.anticon {
+  margin-top: 5px;
+}
+p {
+  margin-left: 5px;
+  padding-top: 2px;
+}
+.ant-input {
+  height: 45.38px;
+  border-radius: 5px !important;
+}
+.url-input {
+  margin-top: 20px;
+}
+
+.ant-input-suffix {
+  color: #00000080;
+  opacity: 1;
+}
+
+.ant-input-affix-wrapper {
+  border-radius: 5px !important;
+}
+.span.ant-upload > button:nth-child(2) > span:nth-child(2) {
+  font: normal normal normal 14px/20px Fira Sans;
+}
