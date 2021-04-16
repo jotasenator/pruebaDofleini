@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { Upload, message, Button } from 'antd';
-import { UploadOutlined } from '@ant-design/icons';
+
+import loadingIcon from '../image/Group 2493.svg'
 
 export const LoadBtn = () => {
     const props = {
@@ -31,7 +32,10 @@ export const LoadBtn = () => {
                     style={{
                         borderRadius: '5px'
                     }}
-                    icon={<UploadOutlined />}>Subir logo</Button>
+                    icon={<img src={loadingIcon} alt="loadingIcon" />}>
+                    Subir logo
+                </Button>
+
             </Upload>
 
 

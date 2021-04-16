@@ -32,8 +32,9 @@ export const TemasButton = () => {
                             border: '1px solid',
                             width: '45px',
                             height: '47.54px',
-                            flexGrow: '1'
-                        }}>A</Button>
+                            flexGrow: '1',
+
+                        }}>{String(' ')}</Button>
 
                     </div>
 

@@ -4,6 +4,7 @@ import { Button } from 'antd';
 export const ButtonPersonas = () => {
 
 
+
     return (
         <div className='quantityButton'>
             <Button >Sólo yo</Button>
