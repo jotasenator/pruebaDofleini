@@ -8,7 +8,6 @@ import { InputSuffixComponent } from './components/InputSuffixcomponent'
 import { LoadBtn } from './components/LoadBtn'
 import { RadioDiv } from './components/RadioDiv'
 import { SubmitBtn } from './components/SubmitBtn'
-
 import { SVG } from './components/svg/SVG'
 import { TemasButton } from './components/TemasButton'
 
@@ -76,6 +75,7 @@ export const Prueba = () => {
           </div>
         </div >
 
+
         <div>
           <div>
             <h3>
@@ -97,16 +97,16 @@ export const Prueba = () => {
           </div>
         </div>
 
+
         <div className='radio-div-wrapper'>
           <h3>
             Color del tema
         </h3>
           <div >
-
             <TemasButton />
-
           </div>
         </div>
+
 
         <div className='radio-div-wrapper'>
           <div>
@@ -115,28 +115,26 @@ export const Prueba = () => {
           <div>
             <div >
               <RadioDiv />
-
             </div>
           </div>
         </div>
 
+
         <div className='submit-button'>
           <div>
             <SubmitBtn />
-
           </div>
           <div>
             <CleanButton />
           </div>
-
         </div>
-
-
       </div>
+
 
       <div className='global-col-rigth'>
         <SVG />
       </div>
+
 
     </div>
 
