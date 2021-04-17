@@ -8,8 +8,10 @@ import { InputSuffixComponent } from './components/InputSuffixcomponent'
 import { LoadBtn } from './components/LoadBtn'
 import { RadioDiv } from './components/RadioDiv'
 import { SubmitBtn } from './components/SubmitBtn'
-import { SVG } from './components/svg/SVG'
 import { TemasButton } from './components/TemasButton'
+
+// import { SVG } from './components/svg/SVG'
+import { SVGPlaygroung } from './components/svg/SVGPlaygroung'
 
 
 import './css.css'
@@ -132,7 +134,8 @@ export const Prueba = () => {
 
 
       <div className='global-col-rigth'>
-        <SVG />
+        {/* <SVG /> */}
+        <SVGPlaygroung />
       </div>
 
 

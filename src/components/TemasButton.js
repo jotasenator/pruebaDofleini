@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from 'antd'
 
 export const TemasButton = () => {
+
+    const [color, setColor] = useState('')
 
     const colors = [
         '#39B0FF',
@@ -15,6 +17,7 @@ export const TemasButton = () => {
         '#B321F1',
         '#48B5FE'
     ]
+
 
 
 
@@ -34,7 +37,11 @@ export const TemasButton = () => {
                             height: '47.54px',
                             flexGrow: '1',
 
-                        }}>{String(' ')}</Button>
+                        }}
+                            onClick={() => setColor({ color })}
+
+
+                        >{String(' ')}</Button>
 
                     </div>
 

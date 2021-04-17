@@ -184,3 +184,6 @@ h3,
   color: #000000;
   opacity: 1;
 }
+.prefix__s {
+  background-color: red !important;
+}
