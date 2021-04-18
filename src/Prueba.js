@@ -1,20 +1,23 @@
 import React from 'react'
-import { BBtn } from './components/BBtn'
-import { ButtonPersonas } from './components/ButtonPersonas'
-import { CleanButton } from './components/CleanButton'
-import { InfoBtn } from './components/InfoBtn'
-import { InputComponent } from './components/InputComponent'
-import { InputSuffixComponent } from './components/InputSuffixcomponent'
-import { LoadBtn } from './components/LoadBtn'
-import { RadioDiv } from './components/RadioDiv'
-import { SubmitBtn } from './components/SubmitBtn'
-import { TemasButton } from './components/TemasButton'
+import { ButtonB } from './components/buttons/ButtonB'
+import { ButtonPersonas } from './components/buttons/ButtonPersonas'
+import { ButtonClean } from './components/buttons/ButtonClean'
+import { ButtonInfo } from './components/buttons/ButtonInfo'
+import { InputComponent } from './components/inputs/InputComponent'
+import { InputSuffixComponent } from './components/inputs/InputSuffixcomponent'
+import { ButtonLoad } from './components/buttons/ButtonLoad'
+import { RadioDivSelect } from './components/RadioDivSelect'
+import { ButtonSubmit } from './components/buttons/Buttonsubmit'
+import { ButtonTemas } from './components/buttons/ButtonTemas'
 
 // import { SVG } from './components/svg/SVG'
 import { SVGPlaygroung } from './components/svg/SVGPlaygroung'
 
 
 import './css.css'
+import { Parrafo1 } from './components/parrafos/Parrafo1'
+import { Parrafo2 } from './components/parrafos/Parrafo2'
+import { Parrafo3 } from './components/parrafos/Parrafo3'
 
 
 export const Prueba = () => {
@@ -28,51 +31,37 @@ export const Prueba = () => {
         <div>
           <h3>Logo del espacio</h3>
           <div className='bBtn-loadBtn'>
-            <BBtn />
-
-            <LoadBtn />
-
+            <ButtonB />
+            <ButtonLoad />
           </div>
         </div>
 
 
 
         <div className='infoBtn-p'>
-          <InfoBtn />
+          <ButtonInfo />
           <div className='p1-inforBtn'>
-            <p>
-              Este logo identificará tu espacio entre el resto.
-          </p>
-            <p>
-              Preferiblemente sube una imagen .png igual o superior a 65px a 72ppp con fondo transparente.
-         </p>
+            <Parrafo1 />
           </div>
         </div >
 
 
 
         <div>
-
           <div>
             <h3>Nombre del espacio</h3>
-
             <InputComponent />
           </div>
 
           <div className='url-input'>
             <h3>URL del espacio (dirección web)</h3>
             <InputSuffixComponent />
-
           </div>
+
           <div className='infoBtn-p'>
-            <InfoBtn />
+            <ButtonInfo />
             <div className='p1-inforBtn'>
-              <p>
-                Puedes cambiar la URL de tu espacio (dirección web) en cualquier momento, pero por cortesía hacia tus compañeros de trabajo y otros usuarios de Plankton, por favor no lo hagas muy seguido :)
-           </p>
-              <p>
-                Nota: Si cambias la URL de tu espacio, Plankton automáticamente redireccionará desde la antigua dirección hacia la nueva. En cualquier caso, deberías asegurarte que tus compañeros sepan acerca del cambio porque la dirección anterior pasará a estar libre y puede ser usada por otro espacio en el futuro.
-            </p>
+              <Parrafo2 />
             </div>
           </div>
         </div >
@@ -82,19 +71,17 @@ export const Prueba = () => {
           <div>
             <h3>
               ¿Cuántas personas trabajarán contigo, incluyéndote a ti?
-        </h3>
+            </h3>
             <div>
               <ButtonPersonas />
             </div>
-
           </div>
 
-          <div className='infoBtn-p'>
-            <InfoBtn />
-            <div className='p1-inforBtn'>
-              <p>Este logo identificará tu espacio entre el resto.</p>
 
-              <p> Preferiblemente sube una imagen .png igual o superior a 65px a 72ppp con fondo transparente</p>
+          <div className='infoBtn-p'>
+            <ButtonInfo />
+            <div className='p1-inforBtn'>
+              <Parrafo3 />
             </div>
           </div>
         </div>
@@ -105,7 +92,7 @@ export const Prueba = () => {
             Color del tema
         </h3>
           <div >
-            <TemasButton />
+            <ButtonTemas />
           </div>
         </div>
 
@@ -116,7 +103,7 @@ export const Prueba = () => {
           </div>
           <div>
             <div >
-              <RadioDiv />
+              <RadioDivSelect />
             </div>
           </div>
         </div>
@@ -124,10 +111,10 @@ export const Prueba = () => {
 
         <div className='submit-button'>
           <div>
-            <SubmitBtn />
+            <ButtonSubmit />
           </div>
           <div>
-            <CleanButton />
+            <ButtonClean />
           </div>
         </div>
       </div>

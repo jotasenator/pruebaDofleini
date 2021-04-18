@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button } from 'antd'
 
-export const CleanButton = () => {
+export const ButtonClean = () => {
     return (
         <div>
             <Button

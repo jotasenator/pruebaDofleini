@@ -3,7 +3,7 @@ import { Button } from 'antd';
 
 export const ButtonPersonas = () => {
 
-    const [valuePersonas, setValuePersonas] = useState('')
+    const [valuePersonas, setValuePersonas] = useState('Sólo yo')
 
 
 
@@ -36,6 +36,8 @@ export const ButtonPersonas = () => {
 
 
     }
+
+    console.log(valuePersonas)
 
 
 

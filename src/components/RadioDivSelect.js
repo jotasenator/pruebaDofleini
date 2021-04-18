@@ -2,12 +2,12 @@ import React from 'react'
 
 import { Radio } from 'antd';
 
-export const RadioDiv = () => {
+export const RadioDivSelect = () => {
 
     const [value, setValue] = React.useState('Privado');
 
     const onChange = e => {
-        console.log('radio checked', e.target.value);
+
         setValue(e.target.value);
     };
     const groupStyle = {
@@ -34,6 +34,7 @@ export const RadioDiv = () => {
         color: '#149ffc',
         opacity: '1'
     }
+    console.log('radio checked', value);
 
 
 
@@ -51,6 +52,9 @@ export const RadioDiv = () => {
                                     <Radio value={'Privado'}>
                                         <div style={styleTextActive} >
                                             Privado
+                                             <p style={{ width: '237px' }}>
+                                                El contenido será visible sólo para tí y los miembros de tu Organización.
+                                             </p>
                                         </div>
 
                                     </Radio>
@@ -61,6 +65,9 @@ export const RadioDiv = () => {
                                     <Radio value={'Público'}>
                                         <div style={styleTextNoActive}>
                                             Público
+                                             <p style={{ width: '237px' }}>
+                                                Cualquiera con el vínculo podrá ver la actividad de tu Organización
+                                             </p>
                                         </div>
                                     </Radio>
 

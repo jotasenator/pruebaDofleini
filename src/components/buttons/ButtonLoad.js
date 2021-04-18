@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Upload, message, Button } from 'antd';
 
-import loadingIcon from '../image/Group 2493.svg'
+import loadingIcon from '../../image/Group 2493.svg'
 
-export const LoadBtn = () => {
+export const ButtonLoad = () => {
     const props = {
         name: 'file',
         action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',

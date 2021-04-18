@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button } from 'antd'
 
-export const SubmitBtn = () => {
+export const ButtonSubmit = () => {
     return (
         <div>
             <Button

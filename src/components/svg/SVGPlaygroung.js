@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../../appContext/AppContext'
+
+
 
 export const SVGPlaygroung = (props) => {
 
-    // a partir de la linea 427
-    const miEspacio = 'Madrid'
-    const miDominio = 'Etecsa.cu'
+    const { miDominio, miEspacio, color } = useContext(AppContext)
+
+
+
 
     return (
 
@@ -124,7 +128,8 @@ export const SVGPlaygroung = (props) => {
                 </clipPath>
                 <style>
                     {
-                        ".prefix__b,.prefix__k{fill:#fff}.prefix__b{stroke:#e4e4e4}.prefix__c{fill:#f5f6f8}.prefix__ac,.prefix__h{fill:none}.prefix__h{stroke:#48b5fe}.prefix__r{opacity:.5}.prefix__n{fill:#bcbec1}.prefix__p{fill:#e1e8eb}.prefix__aa,.prefix__r{fill:#cfd0d2}.prefix__s{fill:#48b5fe}.prefix__u{fill:#dfdfdf}.prefix__v{fill:#538944}.prefix__v,.prefix__w{font-size:14px}.prefix__v{font-family:OpenSans-SemiBold,Open Sans;font-weight:600}.prefix__w{font-family:OpenSans-Regular,Open Sans}.prefix__af{stroke:none}"
+                        // ".prefix__b,.prefix__k{fill:#fff}.prefix__b{stroke:#e4e4e4}.prefix__c{fill:#f5f6f8}.prefix__ac,.prefix__h{fill:none}.prefix__h{stroke:#48b5fe}.prefix__r{opacity:.5}.prefix__n{fill:#bcbec1}.prefix__p{fill:#e1e8eb}.prefix__aa,.prefix__r{fill:#cfd0d2}.prefix__s{fill:#48b5fe}.prefix__u{fill:#dfdfdf}.prefix__v{fill:#538944}.prefix__v,.prefix__w{font-size:14px}.prefix__v{font-family:OpenSans-SemiBold,Open Sans;font-weight:600}.prefix__w{font-family:OpenSans-Regular,Open Sans}.prefix__af{stroke:none}"
+                        ".prefix__b,.prefix__k{fill:#fff}.prefix__b{stroke:#e4e4e4}.prefix__c{fill:#f5f6f8}.prefix__ac,.prefix__h{fill:none}.prefix__h{stroke:#48b5fe}.prefix__r{opacity:.5}.prefix__n{fill:#bcbec1}.prefix__p{fill:#e1e8eb}.prefix__aa,.prefix__r{fill:#cfd0d2}.prefix__u{fill:#dfdfdf}.prefix__v{fill:#538944}.prefix__v,.prefix__w{font-size:14px}.prefix__v{font-family:OpenSans-SemiBold,Open Sans;font-weight:600}.prefix__w{font-family:OpenSans-Regular,Open Sans}.prefix__af{stroke:none}"
                     }
                 </style>
             </defs>
@@ -271,6 +276,7 @@ export const SVGPlaygroung = (props) => {
                             height={9}
                             rx={4.5}
                             transform="translate(4135 960)"
+                            fill={color}
                         />
                         <rect
                             className="prefix__r"
@@ -313,6 +319,7 @@ export const SVGPlaygroung = (props) => {
                             height={9}
                             rx={4.5}
                             transform="translate(3797 960)"
+                            fill={color}
                         />
                         <rect
                             className="prefix__r"
@@ -348,6 +355,7 @@ export const SVGPlaygroung = (props) => {
                             height={9}
                             rx={4.5}
                             transform="translate(3920 960)"
+                            fill={color}
                         />
                         <rect
                             className="prefix__r"
@@ -369,6 +377,7 @@ export const SVGPlaygroung = (props) => {
                             height={9}
                             rx={4.5}
                             transform="translate(4029 960)"
+                            fill={color}
                         />
                         <rect
                             className="prefix__r"
@@ -405,7 +414,7 @@ export const SVGPlaygroung = (props) => {
                             rx={4.5}
                             transform="translate(3797 1054)"
                         />
-                        <path className="prefix__s" d="M3781 943h6v46h-6z" />
+                        <path className="prefix__s" d="M3781 943h6v46h-6z" fill={color} />
                     </g>
                     <path d="M3694 642h675v42h-680v-37a5 5 0 015-5z" fill="#e7eaee" />
                     <path className="prefix__u" d="M3689 716h680v1h-680z" />
@@ -425,12 +434,12 @@ export const SVGPlaygroung = (props) => {
                     </text>
                     <text className="prefix__w" transform="translate(3892.538 705.215)">
                         <tspan x={0} y={0}>
-                            {`${miDominio}.plankton.com/proyectos/plan_de_ventas`}
+                            {miDominio}.plankton.com/proyectos/plan_de_ventas
                         </tspan>
                     </text>
                     <text className="prefix__w" transform="translate(3742.538 673.215)">
                         <tspan x={0} y={0}>
-                            {`Plankton - ${miEspacio}`}
+                            Plankton - {miEspacio}
                         </tspan>
                     </text>
                     <path opacity={0.2} fill="#2b2b2b" d="M3843 692h1v16h-1z" />
@@ -556,6 +565,7 @@ export const SVGPlaygroung = (props) => {
                                     cy={11.5}
                                     r={11.5}
                                     transform="translate(.173 97)"
+                                    fill={color}
                                 />
                                 <circle
                                     className="prefix__aa"
@@ -577,6 +587,8 @@ export const SVGPlaygroung = (props) => {
                                 height={32}
                                 rx={16}
                                 transform="translate(409 12)"
+                                fill={color}
+
                             />
                             <path
                                 d="M251.65 25.04a1 1 0 01.56 1.75l-3.67 3.18 1.1 4.73a1 1 0 01-1.49 1.08L244 33.27l-4.15 2.5a1 1 0 01-1.49-1.08l1.1-4.72-3.67-3.18a1 1 0 01.57-1.75l4.83-.41 1.89-4.459a1 1 0 011.84 0l1.89 4.45 4.84.42z"

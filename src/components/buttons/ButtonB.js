@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'antd'
 
-export const BBtn = () => {
+export const ButtonB = () => {
     return (
         <div className='bBtn'>
             <Button
