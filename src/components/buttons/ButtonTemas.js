@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import { Button } from 'antd'
+import { AppContext } from '../../context/AppContext'
+
+
+
 
 export const ButtonTemas = () => {
 
-    const [color, setColor] = useState('#39B0FF')
+    const { handleChangeColor } = useContext(AppContext)
 
     const colors = [
         '#39B0FF',
@@ -18,17 +22,9 @@ export const ButtonTemas = () => {
         '#48B5FE'
     ]
 
-    console.log(color)
-
-
-
-
     return (
-
         <div className='temas-btn' >
-
             {
-
                 colors.map((color, index) => (
                     <div key={index}>
                         <Button shape="circle" style={{
@@ -40,24 +36,11 @@ export const ButtonTemas = () => {
                             flexGrow: '1',
 
                         }}
-                            onClick={() => setColor(color)}
-
-
+                            onClick={() => handleChangeColor(color)}
                         >{String(' ')}</Button>
-
                     </div>
-
                 ))
-
-
-
             }
-
-
-
-
-
-
         </div >
     )
 }

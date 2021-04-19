@@ -7,7 +7,7 @@ import { InputComponent } from './components/inputs/InputComponent'
 import { InputSuffixComponent } from './components/inputs/InputSuffixcomponent'
 import { ButtonLoad } from './components/buttons/ButtonLoad'
 import { RadioDivSelect } from './components/RadioDivSelect'
-import { ButtonSubmit } from './components/buttons/Buttonsubmit'
+import { ButtonSubmit } from './components/buttons/ButtonSubmit'
 import { ButtonTemas } from './components/buttons/ButtonTemas'
 
 // import { SVG } from './components/svg/SVG'
@@ -24,7 +24,7 @@ export const Prueba = () => {
   return (
     <div className='global-col-all'>
 
-      <div className='global-col-left'>
+      <div className=' global-col-left'>
 
         <h1>Configuración</h1>
 
@@ -48,7 +48,7 @@ export const Prueba = () => {
 
 
         <div>
-          <div>
+          <div className='espacio-input'>
             <h3>Nombre del espacio</h3>
             <InputComponent />
           </div>
@@ -91,7 +91,7 @@ export const Prueba = () => {
           <h3>
             Color del tema
         </h3>
-          <div >
+          <div className='temas'>
             <ButtonTemas />
           </div>
         </div>
@@ -102,7 +102,7 @@ export const Prueba = () => {
             <h3>Privacidad del espacio</h3>
           </div>
           <div>
-            <div >
+            <div className='radio-div'>
               <RadioDivSelect />
             </div>
           </div>

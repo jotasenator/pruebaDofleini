@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import { Radio } from 'antd';
+import { AppContext } from '../context/AppContext';
 
 export const RadioDivSelect = () => {
 
-    const [value, setValue] = React.useState('Privado');
+    const { handleChangePrivacidad } = useContext(AppContext)
+
+    const { privacidad } = useContext(AppContext)
+
+
 
     const onChange = e => {
 
-        setValue(e.target.value);
+        handleChangePrivacidad(e.target.value);
     };
     const groupStyle = {
         display: 'flex',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        width: '100%'
     }
 
     const styleNoActive = {
@@ -34,17 +40,15 @@ export const RadioDivSelect = () => {
         color: '#149ffc',
         opacity: '1'
     }
-    console.log('radio checked', value);
-
 
 
 
     return (
         <>
-            <Radio.Group style={groupStyle} onChange={onChange} value={value}>
+            <Radio.Group style={groupStyle} onChange={onChange} value={privacidad}>
 
                 {
-                    value === 'Privado'
+                    privacidad === 'Privado'
                         ?
                         (
                             <>
@@ -52,9 +56,6 @@ export const RadioDivSelect = () => {
                                     <Radio value={'Privado'}>
                                         <div style={styleTextActive} >
                                             Privado
-                                             <p style={{ width: '237px' }}>
-                                                El contenido será visible sólo para tí y los miembros de tu Organización.
-                                             </p>
                                         </div>
 
                                     </Radio>
@@ -65,9 +66,6 @@ export const RadioDivSelect = () => {
                                     <Radio value={'Público'}>
                                         <div style={styleTextNoActive}>
                                             Público
-                                             <p style={{ width: '237px' }}>
-                                                Cualquiera con el vínculo podrá ver la actividad de tu Organización
-                                             </p>
                                         </div>
                                     </Radio>
 

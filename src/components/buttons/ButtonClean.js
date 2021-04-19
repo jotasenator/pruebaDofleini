@@ -16,6 +16,7 @@ export const ButtonClean = () => {
                     marginLeft: '15px'
 
                 }}
+                onClick={() => window.location.replace('')}
 
             >
                 Descartar

@@ -1,55 +1,22 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import { Button } from 'antd';
+import { AppContext } from '../../context/AppContext';
+
 
 export const ButtonPersonas = () => {
 
-    const [valuePersonas, setValuePersonas] = useState('Sólo yo')
-
-
-
-    const handleClick1 = () => {
-        setValuePersonas('Sólo yo')
-
-
-    }
-    const handleClick2 = () => {
-        setValuePersonas('2 - 10')
-
-
-    }
-    const handleClick3 = () => {
-        setValuePersonas('11 - 25')
-    }
-
-
-    const handleClick4 = () => {
-        setValuePersonas('26 - 50')
-
-    }
-    const handleClick5 = () => {
-        setValuePersonas('51 - 100')
-
-
-    }
-    const handleClick6 = () => {
-        setValuePersonas('500 +')
-
-
-    }
-
-    console.log(valuePersonas)
-
+    const { handleChangePersonas } = useContext(AppContext)
 
 
     return (
         <div className='quantityButton'>
 
-            <Button onClick={handleClick1} >Sólo yo</Button>
-            <Button onClick={handleClick2}>2 - 10</Button>
-            <Button onClick={handleClick3}>11 - 25</Button>
-            <Button onClick={handleClick4}>26 - 50</Button>
-            <Button onClick={handleClick5}>51 - 100</Button>
-            <Button onClick={handleClick6}>500 +</Button>
+            <Button onClick={() => handleChangePersonas('Sólo yo')} >Sólo yo</Button>
+            <Button onClick={() => handleChangePersonas('2 - 10')}>2 - 10</Button>
+            <Button onClick={() => handleChangePersonas('11 - 25')}>11 - 25</Button>
+            <Button onClick={() => handleChangePersonas('26 - 50')}>26 - 50</Button>
+            <Button onClick={() => handleChangePersonas('51 - 100')}>51 - 100</Button>
+            <Button onClick={() => handleChangePersonas('500 +')}>500 +</Button>
 
 
         </div>

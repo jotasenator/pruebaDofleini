@@ -1,24 +1,26 @@
 import React, { useContext } from 'react'
-import { AppContext } from '../../appContext/AppContext'
+import { AppContext } from '../../context/AppContext'
 
 
-
+//  https://react-svgr.com/playground/
 export const SVGPlaygroung = (props) => {
 
-    const { miDominio, miEspacio, color } = useContext(AppContext)
-
-
+    const { inputSuffixComponent, inputComponent, color } = useContext(AppContext)
 
 
     return (
 
+
+
         <svg
+
             xmlns="http://www.w3.org/2000/svg"
             width={807}
             height={598}
             viewBox="0 0 807 598"
             {...props}
         >
+
             <defs>
                 <filter
                     id="prefix__b"
@@ -34,6 +36,7 @@ export const SVGPlaygroung = (props) => {
                     <feComposite operator="in" in2="c" />
                     <feComposite in="SourceGraphic" />
                 </filter>
+
                 <filter
                     id="prefix__e"
                     x={276}
@@ -434,12 +437,12 @@ export const SVGPlaygroung = (props) => {
                     </text>
                     <text className="prefix__w" transform="translate(3892.538 705.215)">
                         <tspan x={0} y={0}>
-                            {miDominio}.plankton.com/proyectos/plan_de_ventas
+                            {inputSuffixComponent || 'mi.dominio'}.plankton.com/proyectos/plan_de_ventas
                         </tspan>
                     </text>
                     <text className="prefix__w" transform="translate(3742.538 673.215)">
                         <tspan x={0} y={0}>
-                            Plankton - {miEspacio}
+                            Plankton - {inputComponent || 'mi.espacio'}
                         </tspan>
                     </text>
                     <path opacity={0.2} fill="#2b2b2b" d="M3843 692h1v16h-1z" />

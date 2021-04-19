@@ -1,3 +1,13 @@
+html {
+  overflow-y: scroll;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  padding-right: 0 !important;
+}
+
 .global-col-all {
   display: flex;
   flex-direction: row;
@@ -137,7 +147,8 @@ h3,
 .radio-div-wrapper {
   margin-top: 30px;
 }
-.radio-div {
+.radio-div-1,
+.radio-div-2 {
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #48b5fe;
   border-radius: 5px;
@@ -152,7 +163,10 @@ h3,
   padding-left: 11px !important;
   padding-top: 14.23px !important;
 }
-
+.ant-radio-group-outline {
+  /* background-color: yellow; */
+  border: none;
+}
 .submit-button {
   display: flex;
   flex-direction: row;
@@ -181,4 +195,35 @@ h3,
 }
 .prefix__s {
   background-color: red !important;
+}
+@media screen and (max-width: 1500px) {
+  .global-col-rigth {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .global-col-left {
+    margin-left: 2%;
+  }
+  .temas-btn {
+    transform: scale(0.75);
+  }
+
+  .p1-inforBtn,
+  .url-input,
+  .espacio-input,
+  .infoBtn-p,
+  .radio-div-wrapper,
+  .temas {
+    width: 90vw;
+  }
+  .temas {
+    margin-left: 1%;
+  }
+  .temas-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
