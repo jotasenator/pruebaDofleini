@@ -11,6 +11,4 @@ export const types = {
     privacidad: 'CHANGE_PRIVACIDAD'
 
 
-
-
 }

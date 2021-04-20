@@ -4,6 +4,7 @@ import { Button } from 'antd'
 import { AppContext } from '../../context/AppContext'
 
 import Swal from 'sweetalert2'
+// import { message } from 'antd';
 
 
 
@@ -30,6 +31,17 @@ export const ButtonSubmit = () => {
 
                 onClick={() =>
 
+                    // message.info(
+                    //     `Parámetros seleccionados:
+                    // Espacio: ${inputComponent}
+                    // Dominio: ${inputSuffixComponent}
+                    // Personas: ${personas}
+                    // Privacidad: ${privacidad}
+                    // Color: ${color}`,
+                    //     5,
+                    // )
+
+
 
                     Swal.fire(`Parámetros seleccionados:
                     Espacio: ${inputComponent}
@@ -37,9 +49,6 @@ export const ButtonSubmit = () => {
                     Personas: ${personas}
                     Privacidad: ${privacidad}
                     Color: ${color}`)
-
-
-
 
                 }
 

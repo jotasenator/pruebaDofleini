@@ -2,10 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 
-
-
-
-
 import "@fontsource/fira-sans"
 import './css.css';
 import "antd/dist/antd.css";

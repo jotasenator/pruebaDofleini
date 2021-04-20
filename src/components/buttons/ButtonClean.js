@@ -2,7 +2,11 @@ import React from 'react'
 
 import { Button } from 'antd'
 
+
 export const ButtonClean = () => {
+
+
+
     return (
         <div>
             <Button
@@ -17,6 +21,8 @@ export const ButtonClean = () => {
 
                 }}
                 onClick={() => window.location.replace('')}
+
+
 
             >
                 Descartar

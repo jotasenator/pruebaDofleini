@@ -7,7 +7,6 @@ export const ButtonPersonas = () => {
 
     const { handleChangePersonas } = useContext(AppContext)
 
-
     return (
         <div className='quantityButton'>
 

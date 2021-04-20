@@ -4,6 +4,8 @@ import { appReducer } from './reducer/appReducer'
 
 import { Prueba } from './Prueba'
 import { AppContext } from './context/AppContext'
+import { types } from './types/types'
+
 
 
 
@@ -15,7 +17,8 @@ export const App = () => {
         inputComponent: 'mi.espacio',
         inputSuffixComponent: 'mi.dominio',
         personas: 'Sólo yo',
-        privacidad: 'Privado'
+        privacidad: 'Privado',
+
     }
 
 
@@ -23,24 +26,26 @@ export const App = () => {
 
 
     const handleChangeColor = (value) => {
-        dispatch({ type: 'CHANGE_COLOR', payload: value })
+        dispatch({ type: types.color, payload: value })
     }
 
     const handleChangeSpace = (value) => {
-        dispatch({ type: 'CHANGE_INPUT_SPACE', payload: value })
+        dispatch({ type: types.inputComponent, payload: value })
     }
 
     const handleChangeDomine = (value) => {
-        dispatch({ type: 'CHANGE_INPUT_DOMINE', payload: value })
+        dispatch({ type: types.inputSuffixComponent, payload: value })
     }
 
     const handleChangePersonas = (value) => {
-        dispatch({ type: 'CHANGE_PERSONAS', payload: value })
+        dispatch({ type: types.personas, payload: value })
     }
 
     const handleChangePrivacidad = (value) => {
-        dispatch({ type: 'CHANGE_PRIVACIDAD', payload: value })
+        dispatch({ type: types.privacidad, payload: value })
     }
+
+
 
 
 
@@ -53,7 +58,8 @@ export const App = () => {
                     handleChangeSpace,
                     handleChangeDomine,
                     handleChangePersonas,
-                    handleChangePrivacidad
+                    handleChangePrivacidad,
+
                 }
             }>
             <Prueba />

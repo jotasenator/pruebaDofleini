@@ -55,7 +55,35 @@ span.ant-upload > button:nth-child(2) > span:nth-child(2) {
   display: flex;
   flex-direction: row;
 }
+.ant-upload-list-item-name,
+.anticon-delete > svg:nth-child(1),
+.ant-btn-text,
+.ant-tooltip-inner {
+  display: none !important;
+}
 
+.ant-upload-list-item {
+  top: -8px;
+}
+
+.ant-upload-list-picture-container {
+  background-color: rgb(52, 60, 74);
+  overflow: hidden;
+}
+
+.ant-upload-span {
+  transform: scale(1.9);
+  position: relative;
+}
+.ant-upload-list-picture-container {
+  border-radius: 50% !important;
+  height: 67px;
+  left: 110px;
+
+  position: absolute;
+  top: 127px;
+  width: 67px;
+}
 .loadButton {
   margin-left: 10px;
 }
@@ -205,6 +233,9 @@ h3,
 @media screen and (max-width: 800px) {
   .global-col-left {
     margin-left: 2%;
+  }
+  .ant-upload-list-picture-container {
+    left: 2%;
   }
   .temas-btn {
     transform: scale(0.75);

@@ -12,6 +12,7 @@ export const InputComponent = () => {
         <div>
 
             <Input
+
                 onChange={(e) => handleChangeSpace(e.target.value)}
                 placeholder="Ep: Mi espacio de trabajo"
 
