@@ -6,14 +6,17 @@ import { AppContext } from '../../context/AppContext'
 
 export const InputComponent = () => {
 
-    const { handleChangeSpace } = useContext(AppContext)
+    const { handleGlobal } = useContext(AppContext)
 
     return (
         <div>
 
             <Input
 
-                onChange={(e) => handleChangeSpace(e.target.value)}
+                onChange={(e) => handleGlobal({
+                    name: 'inputComponent',
+                    payload: e.target.value
+                })}
                 placeholder="Ep: Mi espacio de trabajo"
 
             />

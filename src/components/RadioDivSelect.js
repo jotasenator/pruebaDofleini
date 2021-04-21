@@ -5,7 +5,7 @@ import { AppContext } from '../context/AppContext';
 
 export const RadioDivSelect = () => {
 
-    const { handleChangePrivacidad } = useContext(AppContext)
+    const { handleGlobal } = useContext(AppContext)
 
     const { privacidad } = useContext(AppContext)
 
@@ -13,7 +13,7 @@ export const RadioDivSelect = () => {
 
     const onChange = e => {
 
-        handleChangePrivacidad(e.target.value);
+        handleGlobal({ name: 'privacidad', payload: e.target.value });
     };
     const groupStyle = {
         display: 'flex',

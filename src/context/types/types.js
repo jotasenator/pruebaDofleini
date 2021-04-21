@@ -8,7 +8,9 @@ export const types = {
 
     personas: 'CHANGE_PERSONAS',
 
-    privacidad: 'CHANGE_PRIVACIDAD'
+    privacidad: 'CHANGE_PRIVACIDAD',
+
+    globalTest: 'GLOBAL'
 
 
 }

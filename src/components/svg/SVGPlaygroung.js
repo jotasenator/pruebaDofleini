@@ -5,13 +5,11 @@ import { AppContext } from '../../context/AppContext'
 //  https://react-svgr.com/playground/
 export const SVGPlaygroung = (props) => {
 
+
     const { inputSuffixComponent, inputComponent, color } = useContext(AppContext)
 
 
     return (
-
-
-
         <svg
 
             xmlns="http://www.w3.org/2000/svg"

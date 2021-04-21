@@ -7,7 +7,7 @@ import { AppContext } from '../../context/AppContext'
 
 export const ButtonTemas = () => {
 
-    const { handleChangeColor } = useContext(AppContext)
+    const { handleGlobal } = useContext(AppContext)
 
     const colors = [
         '#39B0FF',
@@ -36,7 +36,7 @@ export const ButtonTemas = () => {
                             flexGrow: '1',
 
                         }}
-                            onClick={() => handleChangeColor(color)}
+                            onClick={() => handleGlobal({ name: 'color', payload: color })}
                         >{String(' ')}</Button>
                     </div>
                 ))

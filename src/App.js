@@ -20,28 +20,9 @@ export const App = () => {
 
     const [state, dispatch] = useReducer(appReducer, initialState);
 
-
-    const handleChangeColor = (value) => {
-        dispatch({ type: types.color, payload: value })
+    const handleGlobal = (value) => {
+        dispatch({ type: types.globalTest, name: value.name, payload: value.payload })
     }
-
-    const handleChangeSpace = (value) => {
-        dispatch({ type: types.inputComponent, payload: value })
-    }
-
-    const handleChangeDomine = (value) => {
-        dispatch({ type: types.inputSuffixComponent, payload: value })
-    }
-
-    const handleChangePersonas = (value) => {
-        dispatch({ type: types.personas, payload: value })
-    }
-
-    const handleChangePrivacidad = (value) => {
-        dispatch({ type: types.privacidad, payload: value })
-    }
-
-
 
 
 
@@ -50,11 +31,7 @@ export const App = () => {
             value={
                 {
                     ...state,
-                    handleChangeColor,
-                    handleChangeSpace,
-                    handleChangeDomine,
-                    handleChangePersonas,
-                    handleChangePrivacidad,
+                    handleGlobal
 
                 }
             }>

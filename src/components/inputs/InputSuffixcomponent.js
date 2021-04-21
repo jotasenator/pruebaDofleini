@@ -6,13 +6,16 @@ import { AppContext } from '../../context/AppContext'
 export const InputSuffixComponent = () => {
 
 
-    const { handleChangeDomine } = useContext(AppContext)
+    const { handleGlobal } = useContext(AppContext)
 
     return (
         <div>
 
             <Input
-                onChange={(e) => handleChangeDomine(e.target.value)}
+                onChange={(e) => handleGlobal({
+                    name: 'inputSuffixComponent',
+                    payload: e.target.value
+                })}
                 size='small'
                 placeholder="Ep: mi.dominio"
                 suffix=".dofleini.com"
