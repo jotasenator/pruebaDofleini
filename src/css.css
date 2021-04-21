@@ -44,50 +44,78 @@ span.ant-upload > button:nth-child(2) > span:nth-child(2) {
   height: 45.74px;
   margin: 2px;
 }
-.B {
-  color: #ffffff;
-  font: normal normal medium 37px/34px Fira Sans;
-  letter-spacing: 0px;
-  opacity: 1;
-}
+
 .bBtn-loadBtn {
   align-items: center;
   display: flex;
   flex-direction: row;
-}
-.ant-upload-list-item-name,
-.anticon-delete > svg:nth-child(1),
-.ant-btn-text,
-.ant-tooltip-inner {
-  display: none !important;
+  position: relative;
+  left: 68px;
 }
 
-.ant-upload-list-item {
-  top: -8px;
+#input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
 }
-
-.ant-upload-list-picture-container {
+#button {
+  border-radius: 5px;
+  top: 35px;
+}
+#crop {
+  height: 67px;
+  width: 67px;
+  border-radius: 50%;
   background-color: rgb(52, 60, 74);
+  position: relative;
   overflow: hidden;
+  left: -77px;
+  top: -16px;
+}
+#button > img {
+  top: -1px;
+  left: -4px;
+  position: relative;
+  width: 13px;
+  height: 13px;
+}
+#button > span {
+  position: relative;
+  right: -4px;
 }
 
-.ant-upload-span {
-  transform: scale(1.9);
+.B {
+  color: white;
+  left: 23px;
+  top: 15px;
+  position: absolute;
+  font: normal normal 37px/34px Fira Sans;
+  opacity: 1;
+}
+
+.imagen-B {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+}
+.div-input {
+  border-radius: 50%;
+  height: 67px;
+  width: 67px;
   position: relative;
 }
+
 .ant-upload-list-picture-container {
   border-radius: 50% !important;
   height: 67px;
   left: 110px;
-
   position: absolute;
   top: 127px;
-  width: 67px;
 }
 .loadButton {
   margin-left: 10px;
 }
-
 .temas-btn {
   display: flex;
   flex-direction: row;

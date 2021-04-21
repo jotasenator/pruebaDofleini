@@ -1,12 +1,8 @@
 import React, { useReducer } from 'react'
-
-import { appReducer } from './reducer/appReducer'
-
 import { Prueba } from './Prueba'
 import { AppContext } from './context/AppContext'
-import { types } from './types/types'
-
-
+import { types } from './context/types/types'
+import { appReducer } from './context/reducer/appReducer'
 
 
 export const App = () => {

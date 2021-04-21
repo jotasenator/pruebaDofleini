@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonB } from './components/buttons/ButtonB'
+
 import { ButtonPersonas } from './components/buttons/ButtonPersonas'
 import { ButtonClean } from './components/buttons/ButtonClean'
 import { ButtonInfo } from './components/buttons/ButtonInfo'
@@ -31,7 +31,6 @@ export const Prueba = () => {
         <div>
           <h3>Logo del espacio</h3>
           <div className='bBtn-loadBtn'>
-            <ButtonB />
             <ButtonLoad />
           </div>
         </div>
