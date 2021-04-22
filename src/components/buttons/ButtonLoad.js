@@ -35,7 +35,7 @@ export const ButtonLoad = () => {
 
 
     return (
-        <div className='loadButton'>
+        <div className='loadButton '>
             <input
                 ref={inputFileRef}
                 id='input'
@@ -60,9 +60,6 @@ export const ButtonLoad = () => {
                 />
 
             </div>
-
-
-
 
 
 

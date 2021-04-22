@@ -21,7 +21,11 @@ export const App = () => {
     const [state, dispatch] = useReducer(appReducer, initialState);
 
     const handleGlobal = (value) => {
-        dispatch({ type: types.globalTest, name: value.name, payload: value.payload })
+        dispatch({
+            type: types.globalTest,
+            name: value.name,
+            payload: value.payload
+        })
     }
 
 

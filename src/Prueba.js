@@ -119,13 +119,13 @@ export const Prueba = () => {
       </div>
 
 
-      <div className='global-col-rigth'>
+      <div className=' global-col-rigth'>
         {/* <SVG /> */}
         <SVGPlaygroung />
       </div>
 
 
-    </div>
+    </div >
 
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Parrafo1 = () => {
     return (
-        <div>
+        <div >
             <p>
                 Este logo identificará tu espacio entre el resto.
           </p>
